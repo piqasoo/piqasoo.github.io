@@ -1,0 +1,244 @@
+body {
+	font-size: 100%
+} 
+* {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+header {
+	margin-bottom: 20px;
+}
+header .logo {
+	padding: 0;
+}
+header a {
+	top: 45px;
+	height: 10px;
+	padding-left: 50px;
+}
+header #menu {
+	float: right;
+	padding-top: 15px;
+}
+header: after {
+	content: '';
+	clear: both;
+}
+nav ul li {
+	display: inline-block;
+}
+header ul {
+	margin: 0;
+	padding: 0;
+}
+.tabmenu > div {
+	height: 4px;
+	width: 100%;
+	background-color: #000;
+}
+.tabmenu {
+	width: 40px;
+	height: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	display: none;
+	cursor: pointer;
+}
+.menu li {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 30px;
+	color: #fff;
+}
+.logo {
+	font-size: 40px;
+	padding-top: 20px;
+}
+.main-container {
+	margin: 0;
+	display: block;
+	padding: 0px 85px;
+	clear: both;
+	padding-top: 20px;
+}
+.banner {
+	display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.banner > div > div {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 0;
+}
+.shadow {
+	height: 100%;
+}
+.banner h1 {
+	position: relative;
+	color: #fff;
+	font-size: 90px;
+	text-align: center;
+	margin: 0;
+	padding-top: 250px;
+}
+.banner a {
+	border-style: solid;
+    border-width: 1px; 
+    padding: 14px 25px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 33%;
+}
+.banner a {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.salad {
+	position: relative;
+	height: calc(100vh - 200px);
+	width: 100%;
+	min-height: 500px;
+	display: block;
+	background-image: url('../images/salad.jpg');
+	background-size: cover;
+	background-position: center;
+	margin-right: 10px;
+}
+.green {
+	width: 100%;
+	height: calc(100vh - 200px);
+	min-height: 500px;
+	display: block;
+	background-image: url('../images/green.jpg');
+	background-size: cover;
+	background-position: center;
+	margin-right: 10px;
+}
+.mixed {
+	width: 100%;
+	height: calc(100vh - 200px);
+	min-height: 500px;
+	display: block;
+	background-image: url('../images/mixed.jpg');
+	background-size: cover;
+	background-position: center;
+	margin-right: 10px;
+}
+.unvisible {
+	visibility: hidden;
+}
+div.visible {
+	visibility: visible;
+}
+.social {
+	display: flex;
+	justify-content: center;
+}
+
+.social > div {
+    background-color: #fff;
+    width: 15px;
+    margin: 15px;
+    text-align: center;
+    line-height: 0px;
+    height: 25px;
+    font-size: 12px;
+    align-items: center;
+}
+.social img {
+	height: 25px;
+}
+p {
+	text-align: center;
+}
+@media screen and (max-width: 1024px) {
+	header {
+		height: 80px;
+	}
+	div.tabmenu {
+		display: flex;
+		cursor: pointer;
+	}
+	.tabmenu {
+		display: hidden;
+	}
+	#menu nav{
+		position: fixed;
+		top: 100px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(0, 0, 0, 0.92)
+	}
+	#menu nav ul li {
+		display: block;
+		color: #fff;
+		padding-top: 35px;
+		padding-left: 50px;
+		line-height: 30px;
+		font-size: 22px;
+	}
+	.menu li {
+		display: none;
+	}
+	header nav {
+		display: none;
+	}
+	#menu nav.visible {
+		display: block;
+    }
+    .banner {
+		display: block;
+	}
+}
+@media screen and (max-width: 600px) {
+	header {
+		height: 80px;
+	}
+	div.tabmenu {
+		display: flex;
+		cursor: pointer;
+	}
+	.tabmenu {
+		display: hidden;
+	}
+	#menu nav{
+		position: fixed;
+		top: 100px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(0, 0, 0, 0.92)
+	}
+	#menu nav ul li {
+		display: block;
+		color: #fff;
+		padding-top: 35px;
+		padding-left: 50px;
+		line-height: 30px;
+		font-size: 22px;
+	}
+	.menu li {
+		display: none;
+	}
+	header nav {
+		display: none;
+	}
+	#menu nav.visible {
+		display: block;
+	}
+	.banner {
+		display: block;
+	}
+}

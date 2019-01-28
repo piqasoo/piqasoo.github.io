@@ -1,11 +1,10 @@
 $(document).ready(function(){
 
-	$("#tab-menu").hover(function(){
+	$("#tab-menu").click(function(){
 		$(".menu").toggleClass('visible');
-	});
+		});
 
-	$(".menu").mouseenter(function(){
-		$(this).addClass('visible');
+	$(".menu").click(function(){
+		$(this).toggleClass('visible');
 	})
 });
-

@@ -70,6 +70,7 @@ button.send {
 .subscribe-form {
 	display: flex;
 	padding-top: 15px;
+	padding-right: 20%;
 }
 button.subscribe {
 	width: 49%;

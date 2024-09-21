@@ -1,0 +1,33 @@
+.btn {
+    border-radius: 10px;
+    padding: 10px 16px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-primary {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+    }
+    &-secondary {
+        border: 1px solid var(--color-primary);
+        color: var(--color-primary);
+    }
+}
+.plus-icon-white {
+    content: "";
+    display: block;
+    height: 22px;
+    width: 22px;
+    background-image: url('/images/plus-wt.svg');
+}
+.plus-icon-red {
+    content: "";
+    display: block;
+    height: 22px;
+    width: 22px;
+    background-image: url('/images/plus-red.svg');
+}

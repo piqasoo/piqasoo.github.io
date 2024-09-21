@@ -1,0 +1,43 @@
+.filter {
+    &-container {
+        display: flex;
+        padding: 5px;
+        @extend %base-border;
+    }
+    &-nav {
+        display: flex;
+
+        li {
+            position: relative;
+            padding: 8px 14px;
+            height: 35px;
+            border-radius: 6px;
+
+            &.active {
+                background: #F3F3F3;
+            }
+            &:not(:first-child){
+                margin-left: 20px;
+            }
+        }
+        form {
+            position: absolute;
+            top: 50px;
+            padding: 24px;
+            @extend %base-border;
+        }
+        label {
+            font-weight: 500;
+        }
+    }
+    &-arrow {
+        content: "";
+        display: block;
+        height: 14px;
+        width: 14px;
+        background-image: url('/images/filter-arrow.svg');
+    }
+    &-region {
+        left: -7px;
+    }
+}

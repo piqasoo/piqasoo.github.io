@@ -64,12 +64,44 @@
                 <button class="btn btn-secondary"><span class="plus-icon-red"></span> აგენტის დამატება</button>
             </div>
         </section>
+        <section class="list-container mt-2">
+            <product/>
+            <product/>
+            <product/>
+            <product/>
+            <product/>
+            <product/>
+        </section>
     </main>
 </template>
 <script>
+    import axios from 'axios';
+    import Product from "./../components/Product.vue"
+    import TOKEN from "./../const.js";
+
     export default{
+        components: {Product},
         data(){
             return {
+                products: [],
+            }
+        }, 
+        mounted(){
+            console.log(TOKEN);
+            this.loadData();
+        },
+        methods: {
+            loadData(){
+                axios.get('https://api.real-estate-manager.redberryinternship.ge/api/real-estates', {
+                    headers: {
+                        Authorization: `Bearer ${TOKEN}`
+                    }
+                }).then(response => {
+                    console.log(response.data);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
             }
         }
     }
@@ -78,5 +110,11 @@
     .list-header {
         display: flex;
         justify-content: space-between;
+    }
+    .list-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -10px;
+        margin-right: -10px;
     }
 </style>

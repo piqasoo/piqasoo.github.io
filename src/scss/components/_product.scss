@@ -1,0 +1,89 @@
+.product {
+    &-container {
+        width: calc(25% - 20px);
+        margin: 10px;
+        transition: all .3s;
+        position: relative;
+
+        &:hover {
+            box-shadow: 5px 5px 12px 0px #02152614;
+        }
+
+        .btn-tag {
+            position: absolute;
+            z-index: 2;
+            top: 15px;
+            left: 15px;
+
+        }
+        a {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+    &-img {
+        &-container {
+            padding-top: 80%;
+            background-color: gray;
+            position: relative;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                top: 0;
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
+    &-info {
+        padding: 22px 25px;
+        border-width: 0  1px 1px 1px;
+        border-style: solid;
+        border-color: #DBDBDB;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+    }
+    &-price {
+        font-size: 28px;
+        font-weight: 700;
+        &-icon {
+            content: "";
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            background-image: url('/images/location-marker.svg');
+        }
+    }
+    &-bed-icon {
+        content: "";
+        display: inline-block;
+        height: 24px;
+        width: 24px;
+        background-image: url('/images/bed.svg');
+        margin-right: 5px;
+    }
+    &-area-icon {
+        content: "";
+        display: inline-block;
+        height: 18px;
+        width: 18px;
+        background-image: url('/images/area.svg');
+        margin-right: 5px;
+    }
+    &-index-icon {
+        content: "";
+        display: inline-block;
+        height: 18px;
+        width: 16px;
+        background-image: url('/images/index.svg');
+        margin-right: 5px;
+    }
+}

@@ -1,6 +1,4 @@
-.flex {
-    display: flex;
-}
+
 //-------------------------------------
 //------------MARGINS------------------
 .mr-1 {
@@ -8,4 +6,30 @@
 }
 .mr-2 {
     margin-right: 2rem;
+}
+.mt-1 {
+    margin-top: 1rem;
+}
+.mt-2 {
+    margin-top: 2rem;
+}
+.mt-3 {
+    margin-top: 3rem;
+}
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+//-------------------------------------
+//------------FLEX OP------------------
+.flex {
+    display: flex;
+}
+.align-center {
+    align-items: center;
+}
+//-------------------------------------
+//--------------TEXTS------------------
+.text-color-secondary {
+    color: var(--text-color-secondary);
 }

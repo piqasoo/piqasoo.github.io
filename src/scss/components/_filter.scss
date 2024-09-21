@@ -24,6 +24,7 @@
             position: absolute;
             top: 50px;
             padding: 24px;
+            display: none;
             @extend %base-border;
         }
         label {

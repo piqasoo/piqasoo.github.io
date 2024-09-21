@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: process.env.NODE_ENV === "production" ? "/redberry_bootcamp/" : "/",
+    publicPath: process.env.NODE_ENV === "github-pages" ? "/redberry_bootcamp/" : "/",
   };
